@@ -1,0 +1,61 @@
+.Menu_Container,
+.Menu_Wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 88px;
+    position: fixed;
+}
+
+.Menu_Wrapper {
+    align-items: center;
+}
+
+.Logo_Box
+.Logo_Image {
+    display: flex;
+    width: 361px;
+    height: 44.372px;
+    align-items: center;
+    margin-left : 48px;
+    margin-right : auto;
+}
+
+.Select_Box {
+    display: flex;
+    margin-left : auto;
+    margin-right : auto;
+    @media screen and (max-width: 1230px) {
+        display: none;
+    }
+}
+
+.Select_Box_item {
+    margin-left : 56px;
+    margin-right : 56px;
+}
+
+.Button_Box,
+.Menu_Button {
+
+    width : 162px;
+    height : 52px;
+
+    margin-left : auto;
+    margin-right : 48px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu_Button {
+    background: #1867E9;
+
+    border-radius: 48px;
+    border: none;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    text-transform: uppercase;
+}

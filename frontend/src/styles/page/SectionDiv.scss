@@ -1,0 +1,25 @@
+.SectionDiv_Container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.SectionDiv_Wrapepr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.SectionDiv_Video {
+    display: flex;
+    width: 100%;
+}
+
+.SectionDiv_Image_Box,
+.SectionDiv_Image {
+    display: flex;
+    width: 100%;
+    @media screen and (max-width: 1230px) {
+        display: none;
+    }
+}
