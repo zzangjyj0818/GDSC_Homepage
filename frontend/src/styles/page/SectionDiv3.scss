@@ -1,0 +1,38 @@
+.SectionDiv3_Container,
+.SectionDiv3_Wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.SectionDiv3_Title {
+    color: #111;
+    text-align: center;
+    font-family: Google Sans Display;
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-top : 160px;
+    margin-bottom: 172px;
+    @media screen and (max-width: 1350px) {
+        margin-bottom: 0px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size : 24px;
+    }
+}
+
+.SectionDiv3_Detail {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    @media screen and (max-width: 1350px) {
+        width: 100%;
+        justify-content: center;
+    }
+}

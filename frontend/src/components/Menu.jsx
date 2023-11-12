@@ -1,25 +1,7 @@
 import React from 'react';
 import '../styles/components/Menu.scss';
 import Logo from "../assets/c.image/GDSC SMU logo.png";
-
-const menus = [
-  {
-    id: 1,
-    text: "ABOUT",
-  },
-  {
-    id: 2,
-    text: "MEMBER",
-  },
-  {
-    id: 3,
-    text: "EVENT",
-  },
-  {
-    id: 4,
-    text: "FAQ",
-  },
-];
+import { menus } from '../data/dataset';
 
 const Menu = () => {
     return (

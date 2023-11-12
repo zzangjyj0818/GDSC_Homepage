@@ -1,0 +1,24 @@
+.DataList_Left,
+.DataList_Right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.DataList_Left {
+    align-items: flex-start;
+    border-right: 4px dotted #D4D4D4;
+}
+
+.DataList_Right {
+    align-items: flex-end;
+}
+
+.DataList_All {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
