@@ -1,0 +1,81 @@
+.SectionDiv2_Container,
+.SectionDiv2_Wrapper{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+    background: #F6F8FC;
+}
+
+.SectionDiv2_TextBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.SectionDiv2_Head {
+    color: #111;
+    text-align: center;
+    font-family: 'Google Sans Display';
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-top: 160px;
+    margin-bottom: 59px;
+    @media screen and (max-width: 750px) {
+        margin-top : 47px;
+        margin-bottom: 22px;
+        font-size: 20px;
+    }
+}
+
+.SectionDiv2_Middle {
+    color: #666;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 44px;
+    @media screen and (max-width: 750px) {
+        font-size: 7px;
+        line-height: 18.5px;
+    }
+}
+
+.SectionDiv2_Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 177px;
+    height: 56px;
+    margin-top : 44px;
+    margin-bottom: 160px;
+    border-radius: 48px;
+    border: 2px solid #E3E2E6;
+    background: #FFF;
+
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media screen and (max-width: 750px) {
+        width: 91px;
+        height: 26px;
+
+        margin-top: 16px;
+        margin-bottom: 47px;
+
+        font-size: 12px;
+    }
+}

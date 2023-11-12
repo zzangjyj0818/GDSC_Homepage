@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/page/SectionDiv.scss';
-import VideoUrl from "../assets/a.video/pc1920p-video.mp4";
+import VideoUrl from "../assets/a.video/pc3840p-video.mp4";
 import Bottom from "../assets/c.image/Bottom Image.png";
 
 const SectionDiv = () => {
