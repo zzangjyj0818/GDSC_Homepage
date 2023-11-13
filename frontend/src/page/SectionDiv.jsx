@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import '../styles/page/SectionDiv.scss';
 import VideoUrl from "../assets/a.video/pc3840p-video.mp4";
 import Bottom from "../assets/c.image/Bottom Image.png";
 
-const SectionDiv = () => {
+const SectionDiv = forwardRef((props, ref) => {
     return (
-      <div className="SectionDiv_Container">
+      <div className="SectionDiv_Container" ref={ref}>
         <div className="SectionDiv_Wrapepr">
           <video muted autoPlay loop className="SectionDiv_Video">
             <source src={VideoUrl} type="video/mp4" />
@@ -16,6 +16,6 @@ const SectionDiv = () => {
         </div>
       </div>
     );
-};
+});
 
 export default SectionDiv;

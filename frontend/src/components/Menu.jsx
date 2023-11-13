@@ -7,12 +7,12 @@ const Menu = ({onClick}) => {
     return (
         <div className='Menu_Container'>
             <div className='Menu_Wrapper'>
-                <div className='Logo_Box'>
+                <div className='Logo_Box' onClick={()=>onClick(0)}>
                     <img src={Logo} alt='logo' className='Logo_Image'/>
                 </div>
                 <div className='Select_Box'>
                     {menus.map(menu => 
-                        <div key={menu.id} className='Select_Box_item' onClick={()=>onClick(menu.id-1)}>
+                        <div key={menu.id} className='Select_Box_item' onClick={()=>onClick(menu.id)}>
                             {menu.text}
                         </div>
                     )}

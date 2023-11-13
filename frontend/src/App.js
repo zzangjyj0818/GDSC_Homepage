@@ -20,10 +20,10 @@ const App = () => {
   return (
     <>
       <Menu onClick={onMoveToFocus} />
-      <SectionDiv />
-      <SectionDiv2 />
-      <SectionDiv3 ref={refArr[0]} />
-      <SectionDiv4 ref={refArr[1]} />
+      <SectionDiv ref={refArr[0]} />
+      <SectionDiv2 onClick={onMoveToFocus}/>
+      <SectionDiv3 ref={refArr[1]} />
+      <SectionDiv4 ref={refArr[2]} />
     </>
   );
 };
