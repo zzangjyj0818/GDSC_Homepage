@@ -1,0 +1,44 @@
+[
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-12-01",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    },
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-11-01",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    },
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-12-05",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    },
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-11-17",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    },
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-11-21",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    },
+    {
+        "people" : "Yeon",
+        "type" : "SESSION",
+        "date": "2023-11-30",
+        "time" : "21:00 - 22:00",
+        "title" : "Http 프로토콜"
+    }
+]
