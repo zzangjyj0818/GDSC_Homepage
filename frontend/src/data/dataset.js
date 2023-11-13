@@ -2,6 +2,7 @@ import gif1 from "../assets/e. gif/그래픽1.gif";
 import gif2 from "../assets/e. gif/그래픽2.gif";
 import gif3 from "../assets/e. gif/그래픽3.gif";
 import gif4 from "../assets/e. gif/그래픽4.gif";
+import Yeon from "../assets/d. profile png/yeon.png";
 
 export const menus = [
   {
@@ -125,4 +126,25 @@ export const alldatas = [
     text3: "같이 해봐도 좋고, 혼자 해봐도 좋아요.",
     hashtag: "#목표달성 #성장 #디자인 #개발",
   },
+];
+
+export const devrels = [
+  { id: 1, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 2, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 3, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 4, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 5, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 6, url: Yeon , pos : 'frontend', name: 'Yeon' },
+  { id: 7, url: Yeon , pos : 'frontend', name: 'Yeon' },
+];
+
+export const members = [
+  { id: 1, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 2, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 3, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 4, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 5, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 6, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 7, url: Yeon, pos: "frontend", name: "Yeon" },
+  { id: 8, url: Yeon, pos: "frontend", name: "Yeon" },
 ];
