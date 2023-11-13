@@ -28,21 +28,22 @@ const SectionDiv4 = forwardRef((props, ref) => {
           <div
             className={devrelActive ? "Select_active" : "Select_unactive"}
             onClick={() => onDevrelClick()}
-            style={{marginRight: "6px" }}
+            style={{ marginRight: "6px" }}
           >
             LEAD / CORE
           </div>
           <div
             className={memberActive ? "Select_active" : "Select_unactive"}
             onClick={() => onMemberClick()}
-            style={{marginLeft: "6px" }}
+            style={{ marginLeft: "6px" }}
           >
             Member
           </div>
         </div>
         <div className="SectionDiv4_InfBox">
-          {devrelActive
-            ? devrels.map((devrel) => (
+          {devrelActive ? (
+            devrels.length > 0 ? (
+              devrels.map((devrel) => (
                 <div className="Inf_Wrapper" key={devrel.id}>
                   <div className="Inf_ImgBox">
                     <img src={devrel.url} alt="img" className="Inf_Img" />
@@ -63,27 +64,34 @@ const SectionDiv4 = forwardRef((props, ref) => {
                   </div>
                 </div>
               ))
-            : members.map((member) => (
-                <div className="Inf_Wrapper" key={member.id}>
-                  <div className="Inf_ImgBox">
-                    <img src={member.url} alt="img" className="Inf_Img" />
-                    <div className="Inf_TextBox">
-                      <div className="Inf_name">{member.name}</div>
-                      <div className="Inf_Position">{member.pos}</div>
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className="Circle_Box" />
-                  <div className="Link_Box">
-                    <div style={{ marginRight: "4px" }}>
-                      <img src={pf} alt="link" />
-                    </div>
-                    <div style={{ marginLeft: "4px" }}>
-                      <img src={insta} alt="link" />
-                    </div>
+            ) : (
+              <div className="Info_nan">등록된 DevRel이 없습니다.</div>
+            )
+          ) : members.length > 0 ? (
+            members.map((member) => (
+              <div className="Inf_Wrapper" key={member.id}>
+                <div className="Inf_ImgBox">
+                  <img src={member.url} alt="img" className="Inf_Img" />
+                  <div className="Inf_TextBox">
+                    <div className="Inf_name">{member.name}</div>
+                    <div className="Inf_Position">{member.pos}</div>
+                    <div></div>
                   </div>
                 </div>
-              ))}
+                <div className="Circle_Box" />
+                <div className="Link_Box">
+                  <div style={{ marginRight: "4px" }}>
+                    <img src={pf} alt="link" />
+                  </div>
+                  <div style={{ marginLeft: "4px" }}>
+                    <img src={insta} alt="link" />
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="Info_nan">등록된 멤버가 없습니다.</div>
+          )}
         </div>
       </div>
     </div>

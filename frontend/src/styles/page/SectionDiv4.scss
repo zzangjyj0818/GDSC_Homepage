@@ -94,6 +94,7 @@
         flex-direction: row;
         overflow: auto;
         justify-content: flex-start;
+        margin-top : 120px;
     }
 }
 
@@ -200,4 +201,18 @@
     justify-content: center;
 
     display: none;
+}
+
+.Info_nan {
+    display: flex;
+    width: 100%;
+    height : 400px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+    @media screen and (max-width: 768px) {
+        font-size : 20px;
+    }
 }

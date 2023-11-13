@@ -139,12 +139,12 @@ export const devrels = [
 ];
 
 export const members = [
-  { id: 1, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 2, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 3, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 4, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 5, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 6, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 7, url: Yeon, pos: "frontend", name: "Yeon" },
-  { id: 8, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 1, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 2, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 3, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 4, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 5, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 6, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 7, url: Yeon, pos: "frontend", name: "Yeon" },
+  // { id: 8, url: Yeon, pos: "frontend", name: "Yeon" },
 ];
