@@ -8,9 +8,10 @@ const ViewDataList = ({ datas }) => {
     <div className="DataList_All">
       {datas.map((data) =>
         data.gif !== undefined ? (
-          <ViewGif link={data.gif} />
+          <ViewGif link={data.gif} key={data.id}/>
         ) : (
           <ViewTextBox
+            key={data.id}
             title={data.title}
             text1={data.text1}
             text2={data.text2}

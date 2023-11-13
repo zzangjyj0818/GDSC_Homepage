@@ -3,7 +3,7 @@ import '../styles/components/Menu.scss';
 import Logo from "../assets/c.image/GDSC SMU logo.png";
 import { menus } from '../data/dataset';
 
-const Menu = () => {
+const Menu = ({onClick}) => {
     return (
         <div className='Menu_Container'>
             <div className='Menu_Wrapper'>
@@ -12,7 +12,7 @@ const Menu = () => {
                 </div>
                 <div className='Select_Box'>
                     {menus.map(menu => 
-                        <div key={menu.id} className='Select_Box_item'>
+                        <div key={menu.id} className='Select_Box_item' onClick={()=>onClick(menu.id-1)}>
                             {menu.text}
                         </div>
                     )}

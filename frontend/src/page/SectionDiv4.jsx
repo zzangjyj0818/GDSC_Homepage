@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "../styles/page/SectionDiv4.scss";
 import { devrels, members } from "../data/dataset";
 import insta from '../assets/c.image/instagram.png';
 import pf from '../assets/c.image/pf.png';
 
-const SectionDiv4 = () => {
+const SectionDiv4 = forwardRef((props, ref) => {
   const [devrelActive, setDevrelActive] = useState(true);
   const [memberActive, setMemberActive] = useState(false);
 
@@ -18,7 +18,7 @@ const SectionDiv4 = () => {
     setDevrelActive(false);
   };
   return (
-    <div className="SectionDiv4_Container">
+    <div className="SectionDiv4_Container" ref={ref}>
       <div className="SectionDiv4_Wrapper">
         <div className="SectionDiv4_TextBox">
           <div className="TextBox_Maintitle">People of GDSC SMU</div>
@@ -43,7 +43,7 @@ const SectionDiv4 = () => {
         <div className="SectionDiv4_InfBox">
           {devrelActive
             ? devrels.map((devrel) => (
-                <div className="Inf_Wrapper">
+                <div className="Inf_Wrapper" key={devrel.id}>
                   <div className="Inf_ImgBox">
                     <img src={devrel.url} alt="img" className="Inf_Img" />
                     <div className="Inf_TextBox">
@@ -64,7 +64,7 @@ const SectionDiv4 = () => {
                 </div>
               ))
             : members.map((member) => (
-                <div className="Inf_Wrapper">
+                <div className="Inf_Wrapper" key={member.id}>
                   <div className="Inf_ImgBox">
                     <img src={member.url} alt="img" className="Inf_Img" />
                     <div className="Inf_TextBox">
@@ -88,6 +88,6 @@ const SectionDiv4 = () => {
       </div>
     </div>
   );
-};
+});
 
 export default SectionDiv4;
