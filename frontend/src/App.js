@@ -4,6 +4,7 @@ import SectionDiv from "./page/SectionDiv";
 import SectionDiv2 from "./page/SectionDiv2";
 import SectionDiv3 from "./page/SectionDiv3";
 import SectionDiv4 from "./page/SectionDiv4";
+import SectionDiv5 from "./page/SectionDiv5";
 
 const App = () => {
   const focusFirst = useRef(null);
@@ -24,6 +25,7 @@ const App = () => {
       <SectionDiv2 onClick={onMoveToFocus}/>
       <SectionDiv3 ref={refArr[1]} />
       <SectionDiv4 ref={refArr[2]} />
+      <SectionDiv5 ref={refArr[3]} />
     </>
   );
 };
