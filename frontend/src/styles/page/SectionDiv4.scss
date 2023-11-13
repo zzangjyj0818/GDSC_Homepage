@@ -118,6 +118,7 @@
 .Inf_ImgBox,
 .Inf_Img {
     position: absolute;
+    pointer-events: none;
     width: 250px;
     height: 240px;
     
@@ -141,6 +142,7 @@
     .Link_Box {
         display: flex;
         margin-top : 16px;
+        pointer-events: none;
         @media screen and (max-width: 768px) {
             margin-left : 25px;
         }

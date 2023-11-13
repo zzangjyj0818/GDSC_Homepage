@@ -7,7 +7,13 @@ const SectionDiv = forwardRef((props, ref) => {
     return (
       <div className="SectionDiv_Container" ref={ref}>
         <div className="SectionDiv_Wrapepr">
-          <video muted autoPlay loop className="SectionDiv_Video">
+          <video
+            muted
+            autoPlay
+            loop
+            controlsList="nodownload"
+            className="SectionDiv_Video"
+          >
             <source src={VideoUrl} type="video/mp4" />
           </video>
           <div className="SectionDiv_Image_Box">
